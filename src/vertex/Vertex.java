@@ -29,15 +29,28 @@ public class Vertex {
         /*Задача2
         Пользователь вводит два целых числаю
         Нужно вывести в консоль сумму этих двух чисел.
-        */
+        
         
         System.out.println("Введите в консоль два любых целых числа: ");
         Scanner one = new Scanner(System.in);
         int num1 = one.nextInt();
         int num2 = one.nextInt();
-        System.out.println(num1 + num2);
-       
+        System.out.println(num1 + num2);t
         
+        */
+        
+        /*
+        Ввести несколько любых слов или фраз.
+        */
+        
+        Scanner two = new Scanner(System.in);
+        System.out.println("Введите любое слово или фразу:");
+
+        String phrase1 = two.nextLine();
+        String phrase2 = two.nextLine();
+        String phrase3 = two.nextLine();
+        String phrase4 = two.nextLine();
+        System.out.println(phrase1 + " " + phrase2 + " " + phrase3 + " " +  phrase4);
         
         
     }
