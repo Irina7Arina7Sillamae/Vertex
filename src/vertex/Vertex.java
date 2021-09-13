@@ -3,48 +3,47 @@ import java.util.Scanner;   //импорт сканера
 public class Vertex {
 
     public static void main(String[] args) { 
+        //Условный оператор if в Java.Оператор switch
+   
         /*
-        //Ввести несколько любых слов или фраз.
-        Scanner two = new Scanner(System.in);
-        System.out.println("Введите любое слово или фразу:");
-
-        String phrase1 = two.nextLine();
-        String phrase2 = two.nextLine();
-        String phrase3 = two.nextLine();
-        String phrase4 = two.nextLine();
-        System.out.println(phrase1 + " " + phrase2 + " " + phrase3 + " " +  phrase4);
+        //Ввести число на выбор: 1, 2 или 3.
+        //Программа должна сказать какое число ввел пользователь.
+        
+        System.out.println("Введите число: 1, 2 или 3");
+        Scanner inputFigure = new Scanner(System.in);
+        int i = inputFigure.nextInt();
+        
+        if (i == 1){
+            System.out.println("Вы ввели число 1");
+        }
+        else if(i == 2) {
+            System.out.println("Вы ввели число 2");
+        }
+        else if(i == 3) {
+            System.out.println("Вы ввели число 3");
+        }
+        else {
+            System.out.println("Вы ввели другое число");
+        }
         */
         
-        //пользователь вводит любое слово или фразу
-        //программа считывает его и выводит до первого пробела / метод next()
-        /*
-        Scanner sc1 = new Scanner(System.in);
-        System.out.println("Введите любое слово или фразу:");
-        String phrase1 = sc1.next();
-        System.out.println(phrase1);
-        */
         
+        //Оператор switch
+        //(ветвление с помощью переключателей)
         
-        //пользователь вводит в консоль любое дробное число
-        //программа считывает его и выводит в консоль / метод Double()
-        /*
-        System.out.println("Введите любое дробное число:");
-        Scanner scan2 = new Scanner(System.in);
-        Double num = scan2.nextDouble();
+        //та же задача
+        System.out.println("Введите число: 1, 2,3 или 4");
+        Scanner inputFigure1 = new Scanner(System.in);
+        int num = inputFigure1.nextInt();
         
-        System.out.println(num);
-        */
-        
-        //КОНСТАНТА
-        //Вычислить периметр круга при разных значениях радиуса(10см и 25см)
-        
-        final double Pi = 3.1415926536; 
-        //переменную с именем Pi сделали константой, добавив ключевое слово final
-        
-        double lenght1 = 2*Pi*10;
-        double lenght2 = 2*Pi*25;
-        
-        System.out.println("Периметр круга при радиусе 10 см равен: " + lenght1 + 
-                ", а при  радиусе 25 см равен: " + lenght2);
+        switch(num) {
+            case 1: System.out.println("Вы ввели число 1"); break;
+            case 2: System.out.println("Вы ввели число 2"); break;
+            case 3: System.out.println("Вы ввели число 3"); break; 
+            case 4: System.out.println("Вы ввели число 4"); break;
+            default: System.out.println("Вы ввели другое число");
+        }
+   
+}
         
 }
